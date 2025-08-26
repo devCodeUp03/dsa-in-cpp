@@ -6,8 +6,8 @@ using namespace std;
 class Solution {
     public: 
         int maxProduct(vector<int> arr) {
-            sort(arr.begin(), arr.end());
-            int n = arr.size();
+            sort(arr.begin(), arr.end()); //using introsort combination of quick, heap and sometimes selection as per chatgpt
+            int n = arr.size(); //greater<int>() to sort in descending order
             int max1 = arr[n - 1] * arr[n - 2] * arr[n - 3];
             int max2 = arr[n - 1] * arr[0] * arr[1];
             int maximum = max(max1, max2);
