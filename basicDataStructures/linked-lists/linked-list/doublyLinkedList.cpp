@@ -51,9 +51,5 @@ int main()
     cout<<endl;
     dll.traverseBackward(tail);
 
-
-
-
-
     return 0;
 }
